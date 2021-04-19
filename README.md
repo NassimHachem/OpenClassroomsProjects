@@ -1,2 +1,0 @@
-# OpenClassroomsProjects
-Mes projets OpenClassrooms
