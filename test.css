@@ -1,0 +1,16 @@
+.ball{
+    background: chartreuse;
+    width: 10rem;
+    height: 10rem;
+    margin: 200px auto;
+    border-radius: 100%;
+}
+
+.btn{
+    margin-left: 750px;
+    font-size: 3rem;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
