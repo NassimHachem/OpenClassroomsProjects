@@ -1,10 +1,16 @@
+@import "Utils/variables";
+
+.container{
+    margin: 0 1.5rem;
+}
 body{
     margin: 0;
-
+    font-family: 'Roboto', sans-serif;
     
 }
 
 .title{
+    font-family: 'Shrikhand', cursive;
     text-align: center;
     padding: 1.3rem;
     box-shadow: 0 0 8px rgba(0,0, 0, 0.3);
@@ -16,9 +22,16 @@ body{
     background-color: #F3F3F3;
     margin-top: 4px;
     text-align: center;
-    font-size: 1.3rem;
-    padding: 1rem;
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        &__txt{
+            font-weight: 400;
+            font-size: 1.2rem;
+            margin-left: .8rem;
+        }
 }
 
 .explore{
@@ -30,10 +43,12 @@ body{
     background-color: #fafafa;  
     padding: 1rem;
     text-align: center;
+    font-weight: 500;
 
     &__description{
         font-size: 1.2rem;
         margin: 0;
+        font-weight: 250;
         
     }
     
@@ -43,11 +58,65 @@ body{
         margin-top: 0.8rem;
         width: auto;
         cursor: pointer;
-        background-color: rgb(180, 117, 224);
+        @include gradian;
         color: white;
         border: none;
         border-radius: 2rem;
         box-shadow: 2px 2px 8px rgba(0,0, 0, 0.4);
+
+        &:hover{
+            @include gradian-hover;
+            box-shadow: 2px 2px 8px rgba(0,0, 0, 0.57);
+        }
         
     }
 }
+
+.step{
+
+    &__title{
+        font-weight: 500;
+    }
+
+    &__card{
+
+        display: flex;
+        flex-direction: column;
+
+
+        &__item{
+            width: 100%;
+            background-color: #fafafa;
+            height: 4rem;
+            align-items: center;
+            display: flex;
+            box-shadow: 2px 2px 9px rgba(90, 90, 90, 0.2);
+            border-radius: 1rem;
+            margin-bottom: 1.7rem;
+
+                &__number{
+                    margin-right: 1.5rem;
+                    margin-left: -0.7rem;
+                    padding: .3rem;
+                    border-radius: 100%;
+                    width: 1.2rem;
+                    text-align: center;
+                    color: #fff;
+                    background-color: $color-primary;
+                }
+
+                & i{
+                    color: #858585;
+                    margin-right: 1.1rem;
+                }
+                #third-item{
+                    color: $color-primary;
+                }
+            
+        }
+    }
+    
+
+
+}
+

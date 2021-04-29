@@ -1,0 +1,12 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+@mixin gradian {
+    background: rgb(9,9,121);
+    background: linear-gradient(-7deg, rgba(147,85,221,1) 20%, rgba(255,121,218,1) 80%);
+}
+
+@mixin gradian-hover {
+    background: linear-gradient(-7deg,rgba(147,85,221,0.9) 20%, rgba(255,121,218,0.9) 80%);
+}
