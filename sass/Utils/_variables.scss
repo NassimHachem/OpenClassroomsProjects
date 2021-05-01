@@ -2,6 +2,11 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-hearth: #cd97e5;
+$main-color:#F3F3F3;
+
+.pointer{
+    cursor: pointer;
+}
 
 @mixin gradian {
     background: rgb(9,9,121);
@@ -11,3 +16,21 @@ $color-hearth: #cd97e5;
 @mixin gradian-hover {
     background: linear-gradient(-7deg,rgba(147,85,221,0.9) 20%, rgba(255,121,218,0.9) 80%);
 }
+
+@mixin underline {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+    
+}
+
+@mixin underline-after {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 1px;
+    bottom: -3;
+    left: 0%;
+    border-bottom: 2px solid $color-tertiary;
+}
+

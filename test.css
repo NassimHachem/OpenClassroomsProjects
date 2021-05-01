@@ -1,18 +1,81 @@
-.restaurant__card__fig{
-    max-width: 300px;
-    width: 100%;
-    background-color: #fafafa;
-    border-radius: 1rem  ;
+.menu{
+    margin: 0 1rem;
+
+    &__card__txt{
+        font-size: 1.1rem;
+        margin: .7rem 1rem;
+        padding-top: .6rem;
     
+    }
+
+    &__card__flex{
+        display: flex;
+        justify-content: space-between;
+    
+        & span{
+            margin: 0 1.3rem;
+        }
+    }
+
+    &__card__description{
+        margin: 0 1rem;
+        padding-bottom: .6rem;
+        font-weight: 300;
+        
+    }
 }
 
-.restaurant__card__fig__img{
-    width: 100%;
-    border-radius: 1rem 1rem 0 0 ;
-    height: 100%;
-    max-height: 150px;
+
+.test{
+    display: inline-block;
+    padding-bottom: 8px;
+    position: relative;
+    border: 1px solid black;
+    width: 50%;
+    overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
 }
-body{
-    background-color: grey;
-    margin: 200px 200px;
+
+.test:after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: -3;
+    left: 0%;
+    border-bottom: 1px solid red;
 }
+
+
+
+<div class="carte">
+                        <h3 class="menu__card__title">ENTRÉES</h3>
+
+                        <div class="card pointer">
+                            <h3 class="menu__card__txt">Fricassée d'escargot</h3>
+                            <div class="menu__card__flex">
+                                <p class="menu__card__description">Au piment d'espelette</p>
+                                <span>25€</span>
+                            </div>
+                        </div>
+
+                        <div class="card pointer">
+                            <h3 class="menu__card__txt">Foie gras de canard mi-cuit</h3>
+                            <div class="menu__card__flex">
+                                <p class="menu__card__description">Et ses copeaux de truffe noire</p>
+                                <span>35€</span>
+                            </div>
+                        </div>
+
+                        <div class="card pointer">
+                            <h3 class="menu__card__txt">Oeuf au plat</h3>
+                            <div class="menu__card__flex">
+                                <p class="menu__card__description">Assaisonné à la truffe sur lit de caviar</p>
+                                <span>20€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr)
