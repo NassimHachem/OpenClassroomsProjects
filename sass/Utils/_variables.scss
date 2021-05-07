@@ -34,3 +34,30 @@ $main-color:#F3F3F3;
     border-bottom: 2px solid $color-tertiary;
 }
 
+.delay{
+    animation: test 1s ease-out;
+    animation-delay: 0;
+    
+  }
+
+  .delay2{
+    animation: test 1.3s ease-in-out;
+    
+    
+  }
+.delay3{
+    animation: test 1.6s ease-in-out;
+}
+
+@keyframes test{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+        
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+        
+    }
+}

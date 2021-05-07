@@ -185,6 +185,12 @@ a{
                 background-color: #fff;
                 box-shadow: 2px 2px 9px rgba(90, 90, 90, 0.2);
                 position: relative;
+                transition: .3s;
+
+                &:hover{
+                    transform: scale(1.01);
+                    transition: .3s;
+                }
                 
                 
                 &__img{
@@ -386,11 +392,11 @@ a{
 .carte{
     display: flex;
     flex-direction: column;
+    
 }
 
 .menu-btn{
     display: flex;
     justify-content: center;
 }
-
 
