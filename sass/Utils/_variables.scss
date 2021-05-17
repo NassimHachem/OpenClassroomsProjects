@@ -29,14 +29,14 @@ $main-color:#F3F3F3;
     position: absolute;
     width: 3rem;
     height: 1px;
-    bottom: -3;
+    bottom: -3px;
     left: 0%;
     border-bottom: 2px solid $color-tertiary;
 }
 
 .delay{
     animation: test 1s ease-out;
-    animation-delay: 0;
+    animation-delay: 0s;
     
   }
 
