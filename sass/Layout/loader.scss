@@ -1,20 +1,20 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
 .section{
+    
     height: 100%;
     width: 100%;
     font-size: 3rem;
     font-family: 'Shrikhand', cursive;
     color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
+    z-index: 999;
     display: flex;
-    justify-content: center;
     align-items: center;
-    animation: bro 1s;;
+    justify-content: center;
+    animation: transition 1s ease-in-out 1s forwards;
     
+    
+   
     
     
 }
@@ -61,17 +61,3 @@ body{
 .loader-title{
     animation: flash 1.1s linear infinite;
 }
-
-
-@keyframes spin{
-    0%{transform: rotate(0deg)}
-    100%{transform: rotate(360deg);}
-}
-
-@keyframes flash{
-    0%{color: rgba(0, 0, 0, 1); }
-    90%{color: rgba(0, 0, 0, 0.5); text-shadow: none;}
-    100%{color: rgba(0, 0, 0, 1); }
-}
-
-

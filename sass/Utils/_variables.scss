@@ -61,3 +61,19 @@ $main-color:#F3F3F3;
         
     }
 }
+
+@keyframes spin{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes flash{
+    0%{color: rgba(0, 0, 0, 1); }
+    90%{color: rgba(0, 0, 0, 0.5); text-shadow: none;}
+    100%{color: rgba(0, 0, 0, 1); }
+}
+
+@keyframes transition{
+    0%{visibility: visible;}
+    100%{visibility: hidden;}
+}
